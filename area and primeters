@@ -26,7 +26,7 @@ int main(){
         scanf("%f",&a);
         printf("\nEnter your berth value-->");
         scanf("%f",&b);
-        printf("\nEnter your Hypotenuse value-->");
+        printf("\nEnter your hypotenuse value-->");
         scanf("%f",&c);
         perimeter=a+b+c;
         area=2/a*b;
