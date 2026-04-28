@@ -4,10 +4,10 @@ int main(){
     int num;
     float a,b,c,area,perimeter;
     
-    printf("1.square\n");
-    printf("2.triangle\n");
-    printf("3.rectangle\n");
-    printf("4.circle\n");
+    printf("1.Square\n");
+    printf("2.Triangle\n");
+    printf("3.Rectangle\n");
+    printf("4.Circle\n");
     printf("\nEnter number and find area and prerimeter-->");
     scanf("%d",&num);
     
@@ -72,5 +72,8 @@ int main(){
             printf("\nInvalid input");
         }
         break;
+        
+        default:
+        printf("\nNigga only between 1-4");
     }
 }
