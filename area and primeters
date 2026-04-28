@@ -18,8 +18,12 @@ int main(){
         scanf("%f",&a);
         perimeter=4*a;
         area=a*a;
+        if(a>0){
         printf("\nYour perimeter of the square is-->%.2f",perimeter);
         printf("\nYour area of the square is-->%.2f",area);
+        }else{
+            printf("\nInvalid input");
+        }
         break;
         
         case 2:
@@ -31,8 +35,12 @@ int main(){
         scanf("%f",&c);
         perimeter=a+b+c;
         area=2/a*b;
+        if(a>0&&b>0&&c>0){
         printf("\nYour perimeter of the triangle is-->%.2f",perimeter);
         printf("\nYour area of the triangle is-->%.2f",area);
+        }else{
+            printf("\nInvalid input");
+        }
         break;
         
          case 3:
@@ -40,10 +48,16 @@ int main(){
         scanf("%f",&a);
         printf("\nEnter your width value-->");
         scanf("%f",&b);
+        
         perimeter=2*(a+b);
         area=a*b;
+        if (a>0&&b>0){
         printf("\nYour perimeter of the rectangle is-->%.2f",perimeter);
+        
         printf("\nYour area of the rectangle is-->%.2f",area);
+        }else{
+            printf("\nInvalid input");
+        }
         break;
         
         case 4:
@@ -51,8 +65,12 @@ int main(){
         scanf("%f",&a);
         perimeter=3.14*a;
         area=2*3.14*a;
+        if(a>0){
         printf("\nYour perimeter of the circle is-->%.2f",perimeter);
         printf("\nYour area of the circle is-->%.2f",area);
+        }else{
+            printf("\nInvalid input");
+        }
         break;
     }
 }
