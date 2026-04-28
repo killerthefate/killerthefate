@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    
+    int x;
+    for(;;){
+        printf("Enter your next even number--");
+    scanf("%d",&x);
+        if(x%2!=0){
+        printf("nigga this is odd number");
+        break;
+        }
+    }
+
+    return 0;
+}
