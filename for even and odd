@@ -6,7 +6,7 @@ int main() {
         printf("Enter even numbers-->");
         scanf("%d",&x);
         if(x%2!=0){
-            printf("This is odd number-->%d\n",x);
+            printf("%d is odd number\n",x);
             break;
         }
     }
