@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    
     int x;
     for(;;){
-        printf("Enter your next even number--");
-    scanf("%d",&x);
+        printf("Enter even numbers-->");
+        scanf("%d",&x);
         if(x%2!=0){
-        printf("nigga this is odd number");
-        break;
+            printf("This is odd number-->%d\n",x);
+            break;
         }
     }
 
