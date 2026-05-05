@@ -2,14 +2,13 @@
 
 int main() {
     int x;
+    printf("Enther only number that do not divied by 7\n\n");
     for(;;){
-        printf("Enter even numbers-->");
+        printf("Enter numbers-->");
         scanf("%d",&x);
         if(x%7==0){
             printf("%d divided by 7x%d\n",x,x/7);
             break;
         }
     }
-
-    return 0;
 }
