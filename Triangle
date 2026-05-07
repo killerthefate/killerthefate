@@ -4,6 +4,9 @@ int main() {
     int a,b,i,j,meow,lol;
     printf("Enter your number to make triangle -->");
     scanf("%d",&a);
+    if(a>25){
+           printf("Plz choose under 25 only");
+       }else{
     printf("1:-normal\n2:-unside down\nEnter you number-->");
     scanf("%d",&lol);
      printf("1:-left\n2:-middle\n3:-right\nChoose you side-->");
@@ -30,8 +33,8 @@ int main() {
         printf("😂");
 
         }printf("\n"); 
+       
        }
-    
 }else{
     for(i=1;i<=a;i++){
         for(j=1;j<=a-i;j++){ 
@@ -56,4 +59,5 @@ int main() {
     }
     }
     return 0;
+}
 }
