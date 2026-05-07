@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main(){
+    
+    int num;
+    int a,b;
+    float c,d;
+    char wow;
+    printf("Enter your symbol-->");
+    scanf("%c",&wow);
+    switch(wow){
+        case '+':
+        printf("Enter your first number to add-->");
+        scanf("%d",&a);
+        printf("Enter you second number to add->");
+        scanf("%d",&b);
+        int add=a+b;
+        printf("answer is-->%d",add);
+        break;
+        
+         case '-':
+        printf("Enter your first number to subtract-->");
+        scanf("%d",&a);
+        printf("Enter you second number to subtract-->");
+        scanf("%d",&b);
+        int sub=a-b;
+        printf("answer is-->%d",sub);
+        break;
+        
+         case '*':
+        printf("Enter your first number to multiply-->");
+        scanf("%d",&a);
+        printf("Enter you second number to multiply-->");
+        scanf("%d",&b);
+        int mul=a*b;
+        printf("answer is-->%d",mul);
+        break;
+        
+         case '/':
+        printf("Enter your first number to division-->");
+        scanf("%f",&c);
+        printf("Enter you second number to division-->");
+        scanf("%f",&d);
+        float dive=c/d;
+        printf("answer is-->%.2f",dive);
+        break;
+        
+         case '%':
+        printf("Enter your number to find even or odd-->");
+        scanf("%d",&a);
+        if(a%2==0){
+            printf("Your number is \"even\"");
+        }else{
+            printf("Your number is \"odd\"");
+        }
+        break;
+    }
+    return 0;
+}
