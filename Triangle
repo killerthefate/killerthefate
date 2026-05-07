@@ -1,13 +1,38 @@
 #include <stdio.h>
 
 int main() {
-    int a,b,i,j,meow;
+    int a,b,i,j,meow,lol;
     printf("Enter your number to make triangle -->");
     scanf("%d",&a);
+    printf("1:-normal\n2:-unside down\nEnter you number-->");
+    scanf("%d",&lol);
      printf("1:-left\n2:-middle\n3:-right\nChoose you side-->");
             scanf("%d",&meow);
     
+   if(lol==2){
+       for(i=a;i>=1;i--){
+        for(j=1;j<=a-i;j++){ 
+            
+            switch(meow){
+             case 1:
+             printf("");
+             break;
+             case 2:
+             printf(" ");
+             break;
+             case 3:
+             printf("  ");
+             break;
+            }
+             
+        }
+            for(j=1;j<=i;j++){
+        printf("😂");
+
+        }printf("\n"); 
+       }
     
+}else{
     for(i=1;i<=a;i++){
         for(j=1;j<=a-i;j++){ 
             
@@ -28,7 +53,7 @@ int main() {
         printf("😂");
 
         }printf("\n");
-    
+    }
     }
     return 0;
 }
