@@ -5,11 +5,10 @@ int main() {
     printf("By using fibonacci enter your number to add-->");
     scanf("%d",&n);
     for(i=1;i<=n;i++){
-        printf("%d\n",first);
-    next=first+second;
-    first=second;
-    second=next;
-
+        next=first+second;
+        printf("%d+%d=%d\n",first,second,next);
+        first=second;
+        second=next;
         }
-        
+return 0;
 }
