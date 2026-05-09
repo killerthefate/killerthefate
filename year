@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+int i,x,ly;
+    
+    
+for(i=1;;i++){
+    printf("Enter your year to find its leap-->");
+    scanf("%d",&x);
+        if((x%4==0&&x%100!=0) || (x%400==0)){
+            ly=1;
+            
+        }else{
+            ly=0;
+        }
+
+if(ly){
+    printf("\"%d is leap year\"\n\n",x);
+    
+}
+else{
+    printf("\"%d not leap year\"\n\n",x);
+}
+}
+    return 0;
+}
