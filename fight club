@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct{
+    string name;
+    string gender;
+    string age;
+    string ID;
+    }Limu,Carkus,Victus,Yu;
+int main() {
+    
+    Limu.name="Name:-Limu Muli";
+    Limu.age="Age:-24";
+    Limu.gender="Gender:-Female";
+    Limu.ID="ID:-6969";
+    
+    Carkus.name="Name:-Carkus Vigilante";
+    Carkus.age="Age:-18";
+    Carkus.gender="Gender:-Male";
+    Carkus.ID="ID:-1111";
+    
+    Victus.name="Name:-Victus meleladone";
+    Victus.age="Age:-28";
+    Victus.gender="Gender:-Male";
+    Victus.ID="ID:-9696";
+    
+    Yu.name="Name:-Yu Niga";
+    Yu.age="Age:-22";
+    Yu.gender="Gender:-Female";
+    Yu.ID="ID:-9166";
+
+cout<<"========================\n";
+cout<<"||     Fight club     ||\n";
+cout<<"========================\n";
+
+cout<<"Our employee are\n\n";
+cout<<Limu.name<<"\n"<<Limu.age<<"\n"<<Limu.gender<<"\n"<<Limu.ID<<"\n\n";
+cout<<Carkus.name<<"\n"<<Carkus.age<<"\n"<<Carkus.gender<<"\n"<<Carkus.ID<<"\n\n";
+cout<<Victus.name<<"\n"<<Victus.age<<"\n"<<Victus.gender<<"\n"<<Victus.ID<<"\n\n";
+cout<<Yu.name<<"\n"<<Yu.age<<"\n"<<Yu.gender<<"\n"<<Yu.ID<<"\n\n";
+
+    return 0;
+}
