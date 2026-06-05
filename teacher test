@@ -1,0 +1,45 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <string>
+using namespace std;
+
+class teacher{
+    private:
+      double salary;
+    public:
+    string name;
+    string dept;
+    string subject;
+   void changedpt(string newdept){
+       dept=newdept;
+   }
+   teacher(string n, string d,string s){
+       name=n;
+       dept=d;
+       subject=s;
+   }
+   void getinfo(){
+       cout<<"namee: "<<name;
+       cout<<"dept:"<<dept<<endl;
+       cout<<"subject:"<<subject<<endl;
+   }
+   void setsalary(int s){
+       salary=s;
+   }
+   double getsalary(){
+       return salary;
+   }
+};
+
+int main() {
+   
+    teacher t1("v","cs","science");
+    teacher t2("s","cs","yfgwr");
+    t1.getinfo();
+    t2.getinfo();
+ 
+t1.setsalary(25000);
+cout<<t1.getsalary();
+    return 0;
+    
+}
