@@ -1,36 +1,51 @@
-// Online C++ compiler to run C++ program online
 #include <iostream>
-#include<string>
+#include <string>
 using namespace std;
 
-
-class person {
-public:
-    string name;
-    int age;
+    class teacher{
+        public:
+        string name;
+        int age;
+        string subject;
     
-};
-class Student  {
-public:
-    int rollno;
+    teacher(string n,int a,string s){
+        this->name=n;
+        this->age=a;
+        this->subject=s;
+    }
+         void getInfo(){
+         cout<<"Name-->: "<<name<<"\n";
+          cout<<"Age-->:"<<age<<"\n";
+          cout<<"Subject-->:"<<subject<<"\n\n";
+    }
+    };
+    class student:public teacher{
+        public:
+        int clas;
+        char dive;
+    
+    student(string n,int a,string s,int c,char d)
+    :teacher(n,a,s){
+         this->clas=c;
+         this->dive=d;
+    }  void getInfo(){
+         cout<<"Name-->: "<<name<<"\n";
+          cout<<"Age-->:"<<age<<"\n";
+          cout<<"Subject-->:"<<subject<<"\n";
+          cout<<"Class-->:"<<clas<<"\n";
+          cout<<"dive-->:"<<dive<<"\n\n";
+    }
     };
     
-class gradstd{
-    public:
-    string area;
-};
-class teacher{
-public:
-double salary;
-string sub;
-};
-class TA:public Student:public teacher:public person{
-    public:
-};
-
-int main() {
-   TA t1;
-   t1.salary=25000;
-   cout<<"salary"<<t1.salary;
+    int main() {
+        cout<<"\t\t\tClass one\n\n"
+      teacher t1("sherya",40,"it");
+      student s1("sunita",34,"sciece",22,'c');
+      student s2("nitin",33,"maths",21,'b');
+        t1.getInfo();
+        s1.getInfo();
+        s2.getInfo();
+        
+        
     return 0;
 }
