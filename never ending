@@ -16,7 +16,7 @@ using namespace std;
          void getInfo(){
          cout<<"Name-->: "<<name<<"\n";
           cout<<"Age-->:"<<age<<"\n";
-          cout<<"Subject-->:"<<subject<<"\n\n";
+          cout<<"Subject-->:"<<subject<<"\n";
     }
     };
     class student:public teacher{
@@ -24,27 +24,45 @@ using namespace std;
         int clas;
         char dive;
     
-    student(string n,int a,string s,int c,char d)
-    :teacher(n,a,s){
+    student(string n,int a,int c,char d)
+    :teacher(n,a,"N/A"){
          this->clas=c;
          this->dive=d;
     }  void getInfo(){
          cout<<"Name-->: "<<name<<"\n";
           cout<<"Age-->:"<<age<<"\n";
-          cout<<"Subject-->:"<<subject<<"\n";
           cout<<"Class-->:"<<clas<<"\n";
           cout<<"dive-->:"<<dive<<"\n\n";
     }
     };
-    
+    void teachio() {
+  cout << "\nTeacher\n";
+}
+void stud() {
+  cout << "\nStudent\n";
+}
     int main() {
-        cout<<"\t\t\tClass one\n\n"
-      teacher t1("sherya",40,"it");
-      student s1("sunita",34,"sciece",22,'c');
-      student s2("nitin",33,"maths",21,'b');
+
+      teacher t1("sherya",25,"information tecnology");
+      student s1("sisu",15,7,'b');
+      student s2("didu",15,7,'b');
+      
+      teacher t2("sherya",25,"information tecnology");
+      student s3("sisu",15,7,'b');
+      student s4("didu",15,7,'b');
+      
+        cout<<"\t\t\tClass one\n\n";
+        teachio();
         t1.getInfo();
+        stud();
         s1.getInfo();
         s2.getInfo();
+        cout<<"\t\t\tClass two\n\n";
+        teachio();
+        t2.getInfo();
+        stud();
+        s3.getInfo();
+        s4.getInfo();
         
         
     return 0;
