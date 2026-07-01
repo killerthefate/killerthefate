@@ -1,0 +1,71 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class teacher{
+    public:
+    string name;
+    int id;
+    teacher(string name,int id){
+        this->name=name;
+        this->id=id;
+    }
+    void getteach(){
+        cout<<"Name-->"<<name<<endl;
+        cout<<"ID-->"<<id<<endl<<endl;
+    }
+};
+class bull{
+    public:
+    string friends;
+    int id;
+    bull(string friends):teacher(name){
+        this->friends=friends;
+    }
+    void getbull(){
+        cout<<"Name-->"<<name<<endl;
+        cout<<"Friends-->"<<friends<<endl<<endl;
+    }
+};
+class student:public teacher{
+    public:
+    char classes;
+    student(string name,int id,char classes):teacher(name,id){
+        this->classes=classes;
+    }
+        void getstud(){
+        cout<<"Name-->"<<name<<endl;
+        cout<<"ID-->"<<id<<endl;
+        cout<<"Class"<<classes<<endl<<endl;
+    }
+};
+class college_teacher:public student{
+    public:
+    string subject;
+    college_teacher(string name,int id,char classes,string subject):student(name,id,classes){
+        this->subject=subject;
+    }
+        void getcoll(){
+        cout<<"Name-->"<<name<<endl;
+        cout<<"ID-->"<<id<<endl;
+        cout<<"Class-->"<<classes<<endl;
+        cout<<"Subject-->"<<subject<<endl<<endl;
+    }
+};
+class pika:public teacher,public bull{
+    public:
+    string pokemon;
+    pika(string name,string pokemon,string friends):teacher(name),bull(friends){
+    }
+    }
+        void getpika(){
+        cout<<"Name-->"<<name<<endl;
+        cout<<"Pokemon-->"<<pokemon<<endl;
+        cout<<"Friends-->"<<friends<<endl<<endl;
+        }
+};
+
+int main(){
+
+    return 0;
+}
