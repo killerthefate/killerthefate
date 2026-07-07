@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+template <typename t1,typename t2,typename t3,typename t4>
+class instagram{
+    private:
+    t1 password;
+    public:
+    t2 name;
+    t3 username;
+    t4 age;
+    
+    instagram(t2 n,t3 u,t4 a,t1 p){
+        password=p;
+        name=n;
+        username=u;
+        age=a;
+    }
+    void getinsta(){
+        cout<<"Name-->"<<name<<endl;
+        cout<<"Username-->"<<username<<endl;
+        cout<<"Age-->"<<age<<endl;
+        cout<<"Password-->"<<password<<endl;
+    }
+};
+int main() {
+instagram i1("shubham","shubhu91k",18,"tppby1919");
+i1.getinsta();
+
+    return 0;
+}
