@@ -18,10 +18,32 @@ class instagram{
         age=a;
     }
     void getinsta(){
-        cout<<"Name-->"<<name<<endl;
-        cout<<"Username-->"<<username<<endl;
-        cout<<"Age-->"<<age<<endl;
-        cout<<"Password-->"<<password<<endl;
+        cout<<"========================="<<endl;
+        cout<<"||      INSTAGRAM      ||"<<endl;
+        cout<<"========================="<<endl<<endl;
+        cout<<"1] Name-->"<<name<<endl;
+        cout<<"2] Username-->"<<username<<endl;
+        cout<<"3] Age-->"<<age<<endl;
+        cout<<"4] Password-->"<<password<<endl<<endl;
+        cout<<"[====================]"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"|        REEL        |"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"[====================]"<<endl<<endl;
+        cout<<"[====================]"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"|        REEL        |"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"|                    |"<<endl;
+        cout<<"[====================]"<<endl;
+        cout<<endl<<"*==========*END*==========*";
     }
 };
 int main() {
