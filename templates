@@ -30,18 +30,18 @@ class instagram{
         cout<<"|                    |"<<endl;
         cout<<"|                    |"<<endl;
         cout<<"|        REEL        |"<<endl;
-        cout<<"|                    |"<<endl;
-        cout<<"|                    |"<<endl;
-        cout<<"|                    |"<<endl;
+        cout<<"|                  ❤|"<<endl;
+        cout<<"|                  💬|"<<endl;
+        cout<<"|                  ♻|"<<endl;
         cout<<"[====================]"<<endl<<endl;
         cout<<"[====================]"<<endl;
         cout<<"|                    |"<<endl;
         cout<<"|                    |"<<endl;
         cout<<"|                    |"<<endl;
         cout<<"|        REEL        |"<<endl;
-        cout<<"|                    |"<<endl;
-        cout<<"|                    |"<<endl;
-        cout<<"|                    |"<<endl;
+        cout<<"|                  ❤|"<<endl;
+        cout<<"|                  💬|"<<endl;
+        cout<<"|                  ♻|"<<endl;
         cout<<"[====================]"<<endl;
         cout<<endl<<"*==========*END*==========*";
     }
