@@ -43,7 +43,7 @@ class instagram{
         cout<<"|                  💬|"<<endl;
         cout<<"|                  ♻|"<<endl;
         cout<<"[====================]"<<endl;
-        cout<<endl<<"*==========*END*==========*";
+        cout<<endl<<"*========*END*========*";
     }
 };
 int main() {
