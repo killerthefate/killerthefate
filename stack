@@ -1,0 +1,53 @@
+#include <iostream>
+#include <vector>
+#include <list>
+#include <stack>
+using namespace std;
+
+int main() {
+
+vector<int>v;
+v.push_back(10);
+v.push_back(20);
+v.push_back(30);
+v.pop_back();
+//v.empty();
+//v.clear();
+
+list<int>l;
+l.push_back(10);
+l.push_back(20);
+l.push_front(30);
+l.push_front(40);
+l.pop_back();
+l.pop_front();
+//l.empty();
+//l.clear();
+
+stack<int>s;
+s.push(10);
+s.pop();
+//s.top();
+//s.empty();
+//s.clear();
+
+queue<int>q;
+q.push(10);
+q.push(10);
+q.push(10);
+q.push(10);
+cout<<"\n\nVECTOR\n\n";
+for(auto x:v)
+cout<<x<<" ";
+
+cout<<"\n\nLIST\n\n";
+for(auto x:l)
+cout<<x<<" ";
+
+cout<<"\n\nSTACK\n\n";
+s.push(20);
+cout<<s.top();
+
+
+    return 0;
+}
