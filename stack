@@ -3,6 +3,9 @@
 #include <list>
 #include <stack>
 #include <queue>
+#include <deque>
+#include <set>
+#include <map>
 using namespace std;
 
 int main() {
@@ -38,6 +41,24 @@ q.push(20);
 q.push(30);
 q.push(40);
 
+
+deque<int>d;
+d.push_front(20);
+d.push_back(30);
+d.push_front(10);
+
+set<int>se;
+se.insert(50);
+se.insert(20);
+se.insert(30);
+se.insert(20);
+se.count();
+
+map<int,string>m;
+m[1]="aman";
+m[2]="rahul";
+m[3]="riya";
+
 cout<<"VECTOR\n\n";
 for(auto x:v)
 cout<<x<<" ";
@@ -53,6 +74,18 @@ cout<<s.top();
 cout<<"\n\nQUEUE\n\n";
 q.pop();
 cout<<q.front();
+
+cout<<"\n\nDEQUE\n\n";
+for(auto x:d)
+cout<<x<<" ";
+
+cout<<"\n\nSET\n\n";
+for(auto x:se)
+cout<<x<<" ";
+
+cout<<"\n\nMAP\n\n";
+for(auto x:m)
+cout<<x.frist<<" "<<x.second;
 
 
     return 0;
