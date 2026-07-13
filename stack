@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <vector>
 #include <list>
 #include <stack>
@@ -36,6 +37,9 @@ cout<<x<<" ";
 
 stack<int>s;
 s.push(10);
+s.push(20);
+s.push(30);
+s.push(40);
 s.pop();
 //s.top();
 //s.empty();
@@ -55,18 +59,18 @@ cout<<q.front();
 
 
 deque<int>d;
-d.push_front(20);
-d.push_back(30);
 d.push_front(10);
+d.push_back(20);
+d.push_front(30);
 cout<<"\n\nDEQUE\n";
 for(auto x:d)
 cout<<x<<" ";
 
 set<int>se;
-se.insert(50);
+se.insert(10);
 se.insert(20);
 se.insert(30);
-se.insert(20);
+se.insert(40);
 //se.count();
 cout<<"\n\nSET\n";
 for(auto x:se)
