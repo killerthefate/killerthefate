@@ -1,22 +1,36 @@
-#include <stdio.h>
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
 
 int main() {
-int gam[]={0,1,2,3,4,5,6,7,8,9,10};
-int x;
-printf("============================\n");
-printf("||   Gambling is happy    ||\n");
-printf("============================\n");
+    int x,i,mon;
+    srand(time(0));
+    int gam = rand() % 101;
+    cout<<"================================="<<endl;
+    cout<<"||          GAMBALING          ||"<<endl;
+    cout<<"================================="<<endl<<endl;
+    cout<<"100=5 attempts\n500=10 attempts\n1000=30 attempts\n1500=50 attempts\n2000=100 attempts\n\n";
+    cout<<"Enter your money-->";
+    cin>>mon;
+    cout<<"you only have "<<mon<<" attempts\n";
+    for(i=1;i<=mon;i++){
+        cout<<endl<<"attempts "<<i<<endl;
+        cout<<"Enter number-->";
+        cin>>x;
+        if(x==gam){
+            cout<<"\""<<gam<<"\"you win in"<<i<<" attempts";
+            return 0;
+        }else if(x<gam){
+            cout<<x<<" is too low\n";
+        }else if(x>gam){
+            cout<<x<<" is too high\n";
+        }
 
-printf("\nEnter your money-->");
-if((scanf("%d",&x)!=1)||(x<=0)) {
-    printf("Enter only money!!\n");
-    return 1;
-}
+    }
+    cout<<"\ngame over";
 
-int lenght=sizeof(gam)/sizeof(gam[0]);
-
-for(int i=0;i<lenght;i++){
-    printf("your gambaling luck is %d/10\n",gam[i]);
-}
     return 0;
 }
