@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    int x,i,mon;
+    int x,y,i,mon;
     srand(time(0));
     int gam = rand() % 101;
     cout<<"================================="<<endl;
@@ -14,14 +14,26 @@ int main() {
     cout<<"================================="<<endl<<endl;
     cout<<"100=5 attempts\n500=10 attempts\n1000=30 attempts\n1500=50 attempts\n2000=100 attempts\n\n";
     cout<<"Enter your money-->";
-    cin>>mon;
+    cin>>y;
+    
+    if(y==100){
+        mon=5;
+    }else if(y==500){
+        mon=10;
+    }else if(y==1000){
+        mon=30;
+    }else if(y==1500){
+        mon=50;
+    }else if(y==2000){
+        mon=100;
+    }
     cout<<"you only have "<<mon<<" attempts\n";
     for(i=1;i<=mon;i++){
         cout<<endl<<"attempts "<<i<<endl;
         cout<<"Enter number-->";
         cin>>x;
         if(x==gam){
-            cout<<"\""<<gam<<"\"you win in"<<i<<" attempts";
+            cout<<"\""<<gam<<"\"you win in "<<i<<" attempts";
             return 0;
         }else if(x<gam){
             cout<<x<<" is too low\n";
@@ -30,7 +42,7 @@ int main() {
         }
 
     }
-    cout<<"\ngame over";
+    cout<<"\ngame over answer was "<<gam;
 
     return 0;
 }
